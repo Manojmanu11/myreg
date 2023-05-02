@@ -33,11 +33,12 @@ public class MainActivity extends AppCompatActivity {
                 String signupUsername=preferences.getString("username","");
                 String signupPassword=preferences.getString("password","");
                 if(usernameValue.equals(signupUsername)&&passwordValue.equals(signupPassword)){
-                    Intent intent=new Intent(MainActivity.this,Homeactivity.class);
-                    startActivity(intent);
+                    Intent intent1=new Intent(MainActivity.this,Homeactivity.class);
+                    startActivity(intent1);
                 }
             }
         });
+        btnregn =  findViewById(R.id.regist);
         btnregn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
